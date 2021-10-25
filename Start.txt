@@ -1,0 +1,24 @@
+﻿Используем:
+	чистую архитектуру
+	ASP.Net Core 5
+	REST
+	Mediator для паттерна посредник
+	CQRS (Command Query Responsibility Segregation) паттерн
+	EF Core для работы с БД
+	Identity Server 4 для аутентификации и авторизации
+	xUnit для unit-тестов
+	auto-mapper для маппинга моделей
+	fluent validation для валидации
+	SQLite
+	Swagger для документирования кода
+	SwagStudio для автогенерации клиента
+	React + TS для тестового клиентского приложения
+	Serilog для логгирования
+
+По завершению будет:
+	Web API
+	Swagger песочница
+	Клиентское приложение на react
+	БД
+	логгировние запросов
+	аутентификация и авторизация пользователей

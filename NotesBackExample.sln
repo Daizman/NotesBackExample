@@ -20,6 +20,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{7AA86C91-44F0-4D4B-948D-313F1FF6BAF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Info", "Info", "{1308E68C-981F-4AE2-9287-07A57BBB6397}"
+	ProjectSection(SolutionItems) = preProject
+		Automapper.txt = Automapper.txt
+		Start.txt = Start.txt
+		Интеграция БД в проект.txt = Интеграция БД в проект.txt
+		Чистая архитектура.txt = Чистая архитектура.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97F96A36-8637-4781-8450-DB0D8C1D275F}"
 	ProjectSection(SolutionItems) = preProject

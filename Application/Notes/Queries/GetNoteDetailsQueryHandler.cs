@@ -6,7 +6,7 @@ using AutoMapper;
 
 namespace Application.Notes.Queries
 {
-    public class GetNoteDetailsQueryHandler
-    {
-    }
+	public class GetNoteDetailsQueryHandler
+	{
+	}
 }
