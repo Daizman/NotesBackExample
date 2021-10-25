@@ -1,0 +1,5 @@
+D:\projects\SharpExamples\NotesBackExample\Persistent\bin\Debug\netcoreapp3.1\Application.dll
+D:\projects\SharpExamples\NotesBackExample\Persistent\bin\Debug\netcoreapp3.1\Domain.dll
+D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.csprojAssemblyReference.cache
+D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.AssemblyInfoInputs.cache
+D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.AssemblyInfo.cs

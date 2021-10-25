@@ -1,0 +1,4 @@
+D:\projects\SharpExamples\NotesBackExample\Application\bin\Debug\netcoreapp3.1\Domain.dll
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
