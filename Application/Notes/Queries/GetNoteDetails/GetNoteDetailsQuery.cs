@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace Application.Notes.Queries
+namespace Application.Notes.Queries.GetNoteDetails
 {
 	public class GetNoteDetailsQuery: IRequest<NoteDetailsVm>
 	{

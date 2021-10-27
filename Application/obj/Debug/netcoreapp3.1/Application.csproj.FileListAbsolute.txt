@@ -1,4 +1,13 @@
 D:\projects\SharpExamples\NotesBackExample\Application\bin\Debug\netcoreapp3.1\Domain.dll
 D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
 D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
-D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+D:\projects\SharpExamples\NotesBackExample\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\projects\SharpExamples\NotesBackExample\Application\bin\Debug\netcoreapp3.1\Application.dll
+D:\projects\SharpExamples\NotesBackExample\Application\bin\Debug\netcoreapp3.1\Application.pdb
+D:\projects\SharpExamples\NotesBackExample\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.dll
+D:\projects\SharpExamples\NotesBackExample\Application\obj\Debug\netcoreapp3.1\Application.pdb

@@ -3,7 +3,7 @@ using AutoMapper;
 using Domain;
 using Application.Common.Mapping;
 
-namespace Application.Notes.Queries
+namespace Application.Notes.Queries.GetNoteDetails
 {
 	public class NoteDetailsVm: IMapWith<Note>
 	{
