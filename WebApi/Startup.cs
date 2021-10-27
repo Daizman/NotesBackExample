@@ -1,40 +1,61 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
+using Application;
+using Application.Common.Mapping;
+using Application.Interfaces;
+using Persistent;
+using Microsoft.Extensions.Configuration;
 
 namespace WebApi
 {
-    public class Startup
-    {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
-        {
-        }
+	public class Startup
+	{
+		public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+		public Startup(IConfiguration configuration) => Configuration = configuration;
 
-            app.UseRouting();
+		public void ConfigureServices(IServiceCollection services)
+		{
+			services.AddAutoMapper(config =>
+			{
+				config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
+				config.AddProfile(new AssemblyMappingProfile(typeof(INotesDbContext).Assembly));
+			});
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
-        }
-    }
+			services.AddApplication();
+			services.AddPersistence(Configuration);
+			services.AddCors(options => 
+			{
+				options.AddPolicy("AllowAll", policty => 
+				{
+					policty.AllowAnyHeader();
+					policty.AllowAnyMethod();
+					policty.AllowAnyOrigin();
+				});
+			});
+		}
+
+		// Настраивается pipeline приложения; указываем, что будет использовать приложение
+		// Применяются все необходимые промежуточные ПО, англ. middleware
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		{
+			if (env.IsDevelopment())
+			{
+				app.UseDeveloperExceptionPage();
+			}
+
+			app.UseRouting();  // Это, например, middleware
+			app.UseHttpsRedirection();
+			app.UseCors("AllowAll");
+
+			app.UseEndpoints(endpoints =>
+			{
+				// Мапимся на контроллеры и их методы
+				endpoints.MapControllers();
+			});
+		}
+	}
 }

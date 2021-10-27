@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JVJXqqK67AB4tyueall3qI76rrvMjwH8koJVRaRDObkYyh8Eq4EPuD790u2Odv06JjhsvjWf02YqJE/aAyKXwg==",
+  "dgSpecHash": "9z+T5PUR9y8dNOobJnMyYSe1+Uo+FDfEEapjKLVKjMSGZr+AzpgzJdtTAFurDqvTq+Gzpe9IBrVG67/ww5cv3g==",
   "success": true,
   "projectFilePath": "D:\\projects\\SharpExamples\\NotesBackExample\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andihell\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Andihell\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.10\\microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",

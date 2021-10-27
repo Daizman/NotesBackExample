@@ -12,8 +12,7 @@ namespace Application.Common.Mapping
 		private void ApplyMappingFromAssembly(Assembly assembly) 
 		{
 			var types = assembly.GetExportedTypes()
-				.Where(type => type.GetInterfaces()
-					.Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IMapWith<>)))
+				.Where(type => type.GetInterfaces().Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IMapWith<>)))
 				.ToList();
 
 			foreach (var type in types) 

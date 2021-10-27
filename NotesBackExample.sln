@@ -23,8 +23,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		..\Info\Automapper.txt = ..\Info\Automapper.txt
+		cqrs посредник mediatr.txt = cqrs посредник mediatr.txt
 		..\Info\Start.txt = ..\Info\Start.txt
+		внедрение зависимостей.txt = внедрение зависимостей.txt
 		..\Info\Интеграция БД в проект.txt = ..\Info\Интеграция БД в проект.txt
+		Создание контроллеров. Конфигурация приложения.txt = Создание контроллеров. Конфигурация приложения.txt
 		..\Info\Чистая архитектура.txt = ..\Info\Чистая архитектура.txt
 	EndProjectSection
 EndProject
