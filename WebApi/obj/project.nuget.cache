@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qf3WYdzjgkgFyo4CfQAT8G1itNumKaQRF7FDWWv61U5q30zdGNjqwKgskSv3xhsQASArGHfRYn/3CcSh1g9jLw==",
+  "dgSpecHash": "llNpgghOSmt2CtlBQk03GGNRUA7fL5Z7zmBF3YmgWpF4uEO8ZcvsPw1U+yP/GkzACBmH3yfWcHGbs5q2kgykNQ==",
   "success": true,
   "projectFilePath": "D:\\projects\\SharpExamples\\NotesBackExample\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andihell\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Andihell\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
+    "C:\\Users\\Andihell\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.4\\fluentvalidation.dependencyinjectionextensions.10.3.4.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

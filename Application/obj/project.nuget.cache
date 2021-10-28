@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9z+T5PUR9y8dNOobJnMyYSe1+Uo+FDfEEapjKLVKjMSGZr+AzpgzJdtTAFurDqvTq+Gzpe9IBrVG67/ww5cv3g==",
+  "dgSpecHash": "HFJndnpoBzY3vQYINwMrLHqyOPVfJ6/FLGnKc5Pn2EHO1yprlNX/m6MmpTxSNtuF6ybbLX1/uaO7QUQohK9JNw==",
   "success": true,
   "projectFilePath": "D:\\projects\\SharpExamples\\NotesBackExample\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andihell\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Andihell\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
+    "C:\\Users\\Andihell\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.4\\fluentvalidation.dependencyinjectionextensions.10.3.4.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Andihell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -8,6 +8,7 @@ using Application.Common.Mapping;
 using Application.Interfaces;
 using Persistent;
 using Microsoft.Extensions.Configuration;
+using WebApi.Middleware;
 
 namespace WebApi
 {
@@ -48,6 +49,7 @@ namespace WebApi
 				app.UseDeveloperExceptionPage();
 			}
 
+			app.UseCustomExceptionHandler();
 			app.UseRouting();  // Это, например, middleware
 			app.UseHttpsRedirection();
 			app.UseCors("AllowAll");
