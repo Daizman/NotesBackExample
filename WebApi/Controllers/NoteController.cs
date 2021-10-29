@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Application.Notes.Queries.GetNoteList;
 using Application.Notes.Queries.GetNoteDetails;
@@ -19,6 +20,7 @@ namespace WebApi.Controllers
 		public NoteController(IMapper mapper) => _mapper = mapper;
 
 		[HttpGet]
+		[Authorize]
 		public async Task<ActionResult<NoteListVm>> GetAll()
 		{ 
 			var query = new GetNoteListQuery 
@@ -31,6 +33,7 @@ namespace WebApi.Controllers
 		}
 
 		[HttpGet("{id}")]
+		[Authorize]
 		public async Task<ActionResult<NoteDetailsVm>> Get(Guid id)
 		{
 			var query = new GetNoteDetailsQuery
@@ -44,6 +47,7 @@ namespace WebApi.Controllers
 		}
 
 		[HttpPost]
+		[Authorize]
 		public async Task<ActionResult<Guid>> Create([FromBody] CreateNoteDto createNoteDto)
 		{
 			var command = _mapper.Map<CreateNoteCommand>(createNoteDto);
@@ -53,6 +57,7 @@ namespace WebApi.Controllers
 		}
 
 		[HttpPut]
+		[Authorize]
 		public async Task<ActionResult<Guid>> Update([FromBody] UpdateNoteDto updateNoteDto)
 		{
 			var command = _mapper.Map<UpdateNoteCommand>(updateNoteDto);
@@ -62,6 +67,7 @@ namespace WebApi.Controllers
 		}
 
 		[HttpDelete("{id}")]
+		[Authorize]
 		public async Task<ActionResult<Guid>> Delete(Guid id)
 		{
 			var command = new DeleteNoteCommand

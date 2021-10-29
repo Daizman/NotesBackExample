@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
@@ -38,6 +39,18 @@ namespace WebApi
 					policty.AllowAnyOrigin();
 				});
 			});
+
+			services.AddAuthentication(config =>
+			{
+				config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+				config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+			})
+				.AddJwtBearer("Bearer", options =>
+				{
+					options.Authority = "https://localhost:44329/";
+					options.Audience = "NotesWebAPI";
+					options.RequireHttpsMetadata = false; 
+				});
 		}
 
 		// Настраивается pipeline приложения; указываем, что будет использовать приложение
@@ -53,6 +66,8 @@ namespace WebApi
 			app.UseRouting();  // Это, например, middleware
 			app.UseHttpsRedirection();
 			app.UseCors("AllowAll");
+			app.UseAuthentication();
+			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>
 			{
