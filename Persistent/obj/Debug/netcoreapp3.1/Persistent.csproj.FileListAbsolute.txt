@@ -10,6 +10,6 @@ D:\projects\SharpExamples\NotesBackExample\Persistent\bin\Debug\netcoreapp3.1\Do
 D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.csproj.AssemblyReference.cache
 D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.GeneratedMSBuildEditorConfig.editorconfig
 D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.csproj.CoreCompileInputs.cache
-D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.csproj.CopyComplete
 D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.dll
 D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.pdb
+D:\projects\SharpExamples\NotesBackExample\Persistent\obj\Debug\netcoreapp3.1\Persistent.csproj.CopyComplete

@@ -27,6 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		FluentValidation для запросов.txt = FluentValidation для запросов.txt
 		MiddleWare.txt = MiddleWare.txt
 		..\Info\Start.txt = ..\Info\Start.txt
+		Swagger.txt = Swagger.txt
 		unit тестирование.txt = unit тестирование.txt
 		Аутентификация и авторизазция пользователя.txt = Аутентификация и авторизазция пользователя.txt
 		внедрение зависимостей.txt = внедрение зависимостей.txt
@@ -35,7 +36,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\Info\Чистая архитектура.txt = ..\Info\Чистая архитектура.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.Tests", "Notes.Tests\Notes.Tests.csproj", "{EE5C0688-5CB9-403C-A6C8-67C23AE93B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notes.Tests", "Notes.Tests\Notes.Tests.csproj", "{EE5C0688-5CB9-403C-A6C8-67C23AE93B92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

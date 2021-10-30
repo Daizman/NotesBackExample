@@ -10,6 +10,8 @@ using Application.Interfaces;
 using Persistent;
 using Microsoft.Extensions.Configuration;
 using WebApi.Middleware;
+using System;
+using System.IO;
 
 namespace WebApi
 {
@@ -51,6 +53,13 @@ namespace WebApi
 					options.Audience = "NotesWebAPI";
 					options.RequireHttpsMetadata = false; 
 				});
+
+			services.AddSwaggerGen(config => 
+			{
+				var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+				var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+				config.IncludeXmlComments(xmlPath);
+			});
 		}
 
 		// Настраивается pipeline приложения; указываем, что будет использовать приложение
@@ -62,6 +71,12 @@ namespace WebApi
 				app.UseDeveloperExceptionPage();
 			}
 
+			app.UseSwagger();
+			app.UseSwaggerUI(config => 
+			{
+				config.RoutePrefix = string.Empty;
+				config.SwaggerEndpoint("swagger/v1/swagger.json", "Notes API");
+			});
 			app.UseCustomExceptionHandler();
 			app.UseRouting();  // Это, например, middleware
 			app.UseHttpsRedirection();
