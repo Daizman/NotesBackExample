@@ -12,6 +12,9 @@ using Microsoft.Extensions.Configuration;
 using WebApi.Middleware;
 using System;
 using System.IO;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace WebApi
 {
@@ -54,17 +57,17 @@ namespace WebApi
 					options.RequireHttpsMetadata = false; 
 				});
 
-			services.AddSwaggerGen(config => 
-			{
-				var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-				var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-				config.IncludeXmlComments(xmlPath);
-			});
+			services.AddVersionedApiExplorer(options =>
+				options.GroupNameFormat = "'v'VVV");
+			services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+			services.AddSwaggerGen();
+			services.AddApiVersioning();
 		}
 
 		// Настраивается pipeline приложения; указываем, что будет использовать приложение
 		// Применяются все необходимые промежуточные ПО, англ. middleware
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, 
+			IApiVersionDescriptionProvider provider)
 		{
 			if (env.IsDevelopment())
 			{
@@ -74,6 +77,13 @@ namespace WebApi
 			app.UseSwagger();
 			app.UseSwaggerUI(config => 
 			{
+				foreach (var descr in provider.ApiVersionDescriptions)
+				{
+					config.SwaggerEndpoint(
+						$"/swagger/{descr.GroupName}/swagger.json",
+						descr.GroupName.ToUpperInvariant());
+					config.RoutePrefix = string.Empty;
+				}
 				config.RoutePrefix = string.Empty;
 				config.SwaggerEndpoint("swagger/v1/swagger.json", "Notes API");
 			});
@@ -83,6 +93,7 @@ namespace WebApi
 			app.UseCors("AllowAll");
 			app.UseAuthentication();
 			app.UseAuthorization();
+			app.UseApiVersioning();
 
 			app.UseEndpoints(endpoints =>
 			{

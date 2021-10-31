@@ -29,6 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\Info\Start.txt = ..\Info\Start.txt
 		Swagger.txt = Swagger.txt
 		unit тестирование.txt = unit тестирование.txt
+		Автогенерация клиента и приложение на React.txt = Автогенерация клиента и приложение на React.txt
 		Аутентификация и авторизазция пользователя.txt = Аутентификация и авторизазция пользователя.txt
 		Версионирование Web API.txt = Версионирование Web API.txt
 		внедрение зависимостей.txt = внедрение зависимостей.txt
